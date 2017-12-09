@@ -1,28 +1,80 @@
+* {
+	box-sizing: border-box;
+}
+
+
 body {
+	width: 1024px;
+	margin: auto;
 	padding: 0;
 	margin: 0;
+	background-color: #ebc051;
 }
 
-header {
-	width: auto;
-	height: 300px;
-	background-image: url(../images/hero.jpg);
-	background-repeat: no-repeat;
 
-}
 
 h1, h2, h3 {
   font-family: 'Muli', sans-serif;
-  font-size: 25px;
+  font-size: 23px;
+  text-align: center;
+  line-height: 45px;
 
 }
 
 p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
+	text-align: center;
+	line-height: 45px;
 }
+
+
+footer {
+	width: auto;
+	height: 300px;
+	background-image: url(../images/hero.jpg);
+	background-repeat: no-repeat;
+	clear: both;
+
+}
+.main {
+	
+}
+
 #win-image, img {
 	width: 60%;
+	float: left;
+	margin-right: -164px;
+}
 
+.game {
+	float: left;
+}
 
+.scoreboard {
+	width: 349px;
+	height: 140px;
+	border: 20px;
+	border-style: groove;
+	border-color: #393939;
+	margin-bottom: 25px; 
+}
+
+.scoreboard, h2, h3 {
+	line-height: 50px;
+
+}
+
+#instruction {
+	font-size: 19px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+}
+
+.letters {
+	width: 349px;
+	height: 290px;
+	border: 20px;
+	border-style: groove;
+	border-color: #393939;
 }
