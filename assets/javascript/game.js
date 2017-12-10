@@ -1,8 +1,16 @@
+$(document).ready(function() {
+
 // <!-- Game sarts when a (any) button is pressed -->
 
 // <!-- A random word from a group of words is secretly selected -->
 
 const wordSelection = ["Shipoopi", "Cool Whip", "Evil Monkey", "Surfin' Bird", "Road House"]
+
+const letters =  ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", 
+	"P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "_"] 
+
+
+}
 
 // <!-- User presses a letter key to guess a letter
 //  -->
