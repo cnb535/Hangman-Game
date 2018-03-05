@@ -1,21 +1,24 @@
-* {
+/** {
 	box-sizing: border-box;
+	outline: 1px solid red;
+}*/
+
+html {
+	width: 80%;
+	height: 100%;
+	margin: 0px 140px;
 }
 
-
 body {
-	width: 1024px;
-	margin: auto;
-	padding: 0;
-	margin: 0;
-	background-color: #ebc051;
+	height: 100%;
+	background-color: #ffffff;
 }
 
 
 
 h1, h2, h3 {
   font-family: 'Muli', sans-serif;
-  font-size: 23px;
+  font-size: 20px;
   text-align: center;
   line-height: 45px;
 
@@ -30,12 +33,14 @@ p {
 
 
 footer {
-	width: auto;
-	height: 300px;
+	height: 410px;
+	width: 1440px;
 	background-image: url(../images/hero.jpg);
-	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position-y: -110px;
 	clear: both;
-
+	position: relative;
+	right: 140px;
 }
 .main {
 	
@@ -44,20 +49,22 @@ footer {
 #win-image, img {
 	width: 60%;
 	float: left;
-	margin-right: -164px;
+	margin-right: -100px;
 }
 
 .game {
 	float: left;
+	position: relative;
+	left: 40px;
 }
 
 .scoreboard {
-	width: 349px;
-	height: 140px;
-	border: 20px;
-	border-style: groove;
-	border-color: #393939;
-	margin-bottom: 25px; 
+	width: 359px;
+	height: 120px;
+	border: 15px;
+	border-style: double;
+	border-color: #04428f;
+	margin-bottom: 15px;
 }
 
 .scoreboard, h2, h3 {
@@ -66,15 +73,16 @@ footer {
 }
 
 #instruction {
-	font-size: 19px;
+	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
 	font-style: italic;
 }
 
 .letters {
-	width: 349px;
+	width: 359px;
 	height: 290px;
-	border: 20px;
-	border-style: groove;
-	border-color: #393939;
+	border: 15px;
+	border-style: double;
+	border-color: #04428f;
+	margin-bottom: 15px;
 }
