@@ -5,20 +5,50 @@
 
 // <!-- A random word from a group of words is secretly selected -->
 
-// const wordSelection = ["Shipoopi", "Cool Whip", "Evil Monkey", "Surfin' Bird", "Road House"]
+	//An object that stores 5 arrays with 1 strng.
+const words = {
+	o1: ["Shipoopi"], 
+	o2: ["Cool Whip"],
+	o3: ["Evil Monkey"], 
+	o4: ["Surfin' Bird"], 
+	o5: ["Road House"]
+};
 
-// const letters =  ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", 
-// 	"P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "_"] 
-// }
+let score = 0;
 
 
+let guesses = 0;
+let wordIndex = 0;
+ 
+//An array that stores all of the hangman word options
+let wordsArray = [words.o1, words.o2, words.o3, words.o4, words.o5];
+
+function selectWord() {
+	if (wordIndex <= (wordsArray.length - 1)) {
+		document.querySelector("#word").innerHTML = 
+		wordsArray[wordIndex][0];
+	} else {
+		alert("Game Over");
+	}
+}
+
+function updateScore() {
+	document.querySelector("#score").innerHTML = score;
+}
+
+
+selectWord();
+updateScore();
 
 // <!-- User presses a letter key to guess a letter -->
 
-    const alreadyGuessed = document.querySelector("#already-guessed");
+    // const alreadyGuessed = document.querySelector("#already-guessed");
 
     window.addEventListener('keyup', function(event) {
-      alreadyGuessed.textContent = event.key;
+      // alreadyGuessed.textContent = event.key;
+      
+      const userInput = String.fromCharCode(event.keyCode).toLowerCase();
+  	  console.log(userInput);
     });  
 
 
@@ -29,6 +59,10 @@
 // <!-- If they are right the letter is displayed (at the top) and taken out of the options -->
 
 // <!-- If they guesses all the right letters, A photo/video pops us and a song plays. -->
+
+
+
+
 
 // <!-- The game restarts -->
 // 
